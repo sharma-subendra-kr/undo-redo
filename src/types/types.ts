@@ -1,4 +1,4 @@
-# undo-redo-stack
+/*
 
 undo-redo-stack, a undo redo stack data structure.
 
@@ -13,14 +13,15 @@ the Free Software Foundation, either version 3 of the License, or
 
 undo-redo-stack is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with undo-redo-stack. If not, see <https://www.gnu.org/licenses/>.
+along with undo-redo-stack.  If not, see <https://www.gnu.org/licenses/>.
 
 Written by Subendra Kumar Sharma.
 
-### This is free software (Free as in freedom not the price). If you like to use this library on a non free software, you can get a proprietary license. To get a proprietary license contact _reach.subendra.kr@gmx.com_.
+*/
 
-## The is a beta release. This version is unstable.
+export type Nullable<T> = T | null;
+export type NULL = null;
