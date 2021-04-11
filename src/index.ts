@@ -126,6 +126,13 @@ class UndoRedo {
 		return this.CURR?.data;
 	}
 
+	setCurrent(data: any): any {
+		if (this.CURR) {
+			this.CURR.data = data;
+			return this.CURR.data;
+		}
+	}
+
 	getData() {
 		let curr: Node = this.TAIL;
 		const res = new Array(this.length);

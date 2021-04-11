@@ -38,6 +38,10 @@ describe("UndoRedo", () => {
 		expect(ur.getData()).toStrictEqual([1, 2, 3]);
 		ur.push(4);
 		expect(ur.getData()).toStrictEqual([1, 2, 4]);
+
+		expect(ur.getCurrent()).toBe(4);
+		expect(ur.setCurrent(5)).toBe(5);
+		expect(ur.getCurrent()).toBe(5);
 	});
 
 	it("empty", () => {
