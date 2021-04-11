@@ -1,7 +1,7 @@
 {
-  "name": "undo-redo-stack",
+  "name": "undo-redo",
   "version": "1.0.0",
-  "description": "undo-redo-stack",
+  "description": "undo-redo",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,11 +15,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sharma-subendra-kr/undo-redo-stack.git"
+    "url": "git+https://github.com/sharma-subendra-kr/undo-redo.git"
   },
   "author": "Subendra Kumar Sharma",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/sharma-subendra-kr/undo-redo-stack.git#readme",
+  "homepage": "https://github.com/sharma-subendra-kr/undo-redo.git#readme",
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.8",
