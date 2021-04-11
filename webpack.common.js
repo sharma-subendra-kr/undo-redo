@@ -50,7 +50,7 @@ module.exports = {
 	},
 	output: {
 		publicPath: "assets",
-		library: "undo-redo",
+		library: "UndoRedo",
 		libraryTarget: "umd",
 	},
 	devServer: {

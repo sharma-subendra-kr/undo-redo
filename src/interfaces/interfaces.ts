@@ -25,40 +25,10 @@ Written by Subendra Kumar Sharma.
 
 import { Nullable, NULL } from "../types/types";
 
-export interface Rect {
-	x1: number;
-	x2: number;
-	y1: number;
-	y2: number;
-}
-
-// export interface RectData {
-// 	rect: Rect;
-// 	data?: Nullable<any>;
-// }
-
 export interface NODE {
-	size: number;
-	pointers: Node[];
-	keys: Rect[];
+	next: Node;
+	prev: Node;
+	data: any;
 }
 
 export type Node = NODE | undefined;
-
-export interface NodeSplitResult {
-	rightRect: Rect[];
-	rptrs: Node[];
-	rightSize: number;
-}
-
-export interface _SplittedNodes_ {
-	left: Node;
-	right: Node;
-}
-
-export type SplittedNodes = _SplittedNodes_ | undefined;
-
-// export interface InsertStackItem {
-// 	node: Node;
-// 	pos: number;
-// }
