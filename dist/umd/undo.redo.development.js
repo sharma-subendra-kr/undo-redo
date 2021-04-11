@@ -214,7 +214,10 @@ class UndoRedo {
             this.HEAD = this.CURR;
             let count = 0;
             while (next !== undefined) {
+                const temp = next;
                 next = next.next;
+                temp.next = undefined;
+                temp.prev = undefined;
                 count++;
             }
             this.length -= count;
