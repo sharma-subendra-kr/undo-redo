@@ -235,6 +235,12 @@ class UndoRedo {
         var _a;
         return (_a = this.CURR) === null || _a === void 0 ? void 0 : _a.data;
     }
+    setCurrent(data) {
+        if (this.CURR) {
+            this.CURR.data = data;
+            return this.CURR.data;
+        }
+    }
     getData() {
         let curr = this.TAIL;
         const res = new Array(this.length);
