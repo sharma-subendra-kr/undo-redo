@@ -57,18 +57,26 @@ class UndoRedo {
 		};
 	}
 
-	undo() {
+	undo(): any {
 		if (this.CURR !== this.TAIL) {
 			this.CURR = this.CURR!.prev;
 			return this.CURR!.data;
 		}
 	}
 
-	redo() {
+	isUndoAvailable(): boolean {
+		return !(this.CURR === this.TAIL);
+	}
+
+	redo(): any {
 		if (this.CURR !== this.HEAD) {
 			this.CURR = this.CURR!.next;
 			return this.CURR!.data;
 		}
+	}
+
+	isRedoAvailable(): boolean {
+		return !(this.CURR === this.HEAD);
 	}
 
 	push(data: any) {
@@ -113,6 +121,17 @@ class UndoRedo {
 
 	getCurrent() {
 		return this.CURR?.data;
+	}
+
+	getData() {
+		let curr: Node = this.TAIL;
+		const res = new Array(this.length);
+		let count = 0;
+		while (curr !== undefined) {
+			res[count++] = curr.data;
+			curr = curr.next;
+		}
+		return res;
 	}
 
 	reset(): void {
