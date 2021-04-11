@@ -26,7 +26,7 @@ Written by Subendra Kumar Sharma.
 "use strict";
 
 if (process.env.NODE_ENV === "production") {
-	module.exports = require("./umd/r.tree.js.production.min.js");
+	module.exports = require("./umd/undo.redo.production.min.js");
 } else {
-	module.exports = require("./umd/r.tree.js.development.js");
+	module.exports = require("./umd/undo.redo.development.js");
 }

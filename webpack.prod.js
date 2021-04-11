@@ -33,8 +33,8 @@ module.exports = merge(common, {
 		path: __dirname + "/dist/umd/",
 		filename:
 			process.env.MINIMIZE === "true"
-				? "r.tree.js.production.min.js"
-				: "r.tree.js.development.js",
+				? "undo.redo.production.min.js"
+				: "undo.redo.development.js",
 	},
 	externals: {
 		Queue: {
