@@ -2,7 +2,7 @@
 
 undo-redo, a undo redo data structure.
 
-Copyright © 2020-2021 Subendra Kumar Sharma. All rights reserved. (jobs.sharma.subendra.kr@gmail.com)
+Copyright © 2020-2021 Subendra Kumar Sharma. All rights reserved.
 
 This file is part of undo-redo.
 
