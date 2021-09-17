@@ -1,6 +1,6 @@
 {
   "name": "@sharma-subendra-kr/undo-redo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "undo-redo",
   "main": "dist/index.js",
   "scripts": {
