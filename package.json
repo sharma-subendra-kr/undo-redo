@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-watch": "jest --watch",
     "start": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js && mv ./dist/umd/index.css ./dist/",
+    "build": "webpack --config webpack.prod.js",
     "lint:check": "prettier -c **/*.{js,css,scss,json}; eslint \"**/*.js\"",
     "lint:fix": "prettier --write **/*.{js,css,scss,json} && eslint --fix \"**/*.js\"",
     "prettier:fix": "prettier --write **/*.{js,css,scss,json}",
@@ -66,10 +66,7 @@
     "webpack-merge": "^5.7.3",
     "webpack-notifier": "^1.13.0"
   },
-  "dependencies": {
-    "Queue": "git+https://sharma-subendra-kr@github.com/sharma-subendra-kr/Queue.git#release-1.0.1",
-    "Stack": "git+https://sharma-subendra-kr@github.com/sharma-subendra-kr/Stack.git#release-1.0.1"
-  },
+  "dependencies": {},
   "jest": {
     "setupFilesAfterEnv": [
       "jest-extended"
